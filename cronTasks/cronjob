@@ -1,0 +1,14 @@
+# helper to config the right time: https://crontab.guru/
+
+# Min  Hour Day  Mon  Weekday
+# *    *    *    *    *  command to be executed
+# ┬    ┬    ┬    ┬    ┬
+# │    │    │    │    └─  Day of Week   (0=Sun .. 6=Sat)
+# │    │    │    └──────  Month         (1..12)
+# │    │    └───────────  Day of Month  (1..31)
+# │    └────────────────  Hour          (0..23)
+# └─────────────────────  Minute        (0..59)
+
+# chain script in sequence
+# 0 * * * * myScript.sh && nexScript.sh && anotherScript.sh
+
